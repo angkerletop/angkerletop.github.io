@@ -1,0 +1,248 @@
+<!DOCTYPE html><html lang="es" class="is-loading"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TGE DEVELOPMENT — FIVEM MALAYSIA MODS &amp; GTA V</title>
+<meta name="description" content="TGE DEVELOPMENT — 3D artist and designer. Custom peds, clothing, tactical gear, MLO interiors, props, and assets for FiveM and GTA V. Blender · 3ds Max." data-i18n-meta="meta.desc">
+<meta name="theme-color" content="#08080a">
+<link rel="icon" href="assets/logo_v%3D3.webp" type="image/webp">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TGE DEVELOPMENT — FIVEM MALAYSIA MODS &amp; GTA V">
+<meta property="og:description" content="Peds, clothing, tactical gear, MLO interiors and custom 3D assets for FiveM and GTA V.">
+<meta property="og:image" content="assets/work7.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;family=Sora:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');setTimeout(function(){var r=document.documentElement;if(!r.classList.contains('ready')){r.classList.add('no-anim');r.classList.remove('is-loading');var l=document.getElementById('loader');if(l)l.style.display='none';}},5000);</script>
+</head>
+<body>
+
+<!-- ============ GLOBAL FX LAYERS ============ -->
+<canvas id="stage" aria-hidden="true"></canvas>
+<div class="fx-grid" aria-hidden="true"></div>
+<div class="fx-mouse" aria-hidden="true"></div>
+<div class="fx-vignette" aria-hidden="true"></div>
+<div class="fx-grain" aria-hidden="true"></div>
+<div class="scroll-bar" aria-hidden="true"><i id="scrollBar"></i></div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"></span><span class="cursor__label" id="cursorLabel"></span></div>
+
+<!-- ============ PRELOADER ============ -->
+<div class="loader" id="loader">
+  <div class="loader__in">
+    <img class="loader__logo" src="assets/logo_v%3D3.webp" alt="" width="90" height="90">
+    <div class="loader__word"><span data-split="chars">TGE DEVELOPMENT</span></div>
+    <div class="loader__bar"><i id="loaderFill"></i></div>
+    <div class="loader__count"><span id="loaderNum">0</span><em>%</em></div>
+  </div>
+  <div class="loader__curtain"></div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top" data-magnetic="" aria-label="TGE DEVELOPMENT — inicio">
+    <img src="assets/logo_v%3D3.webp" alt="Logo de TGE DEVELOPMENT" width="42" height="42">
+    <span class="brand__name">TGE DEVELOPMENT</span>
+  </a>
+  <nav class="nav__links" aria-label="Navegación principal">
+    <a href="#work" data-magnetic=""><span data-i18n="nav.work">Trabajos</span></a>
+    <a href="#services" data-magnetic=""><span data-i18n="nav.services">Servicios</span></a>
+    <a href="#about" data-magnetic=""><span data-i18n="nav.about">Sobre mí</span></a>
+    <a href="#contact" data-magnetic=""><span data-i18n="nav.contact">Contacto</span></a>
+  </nav>
+  <div class="nav__right">
+    <button class="lang" id="langBtn" type="button" data-magnetic="" aria-label="Cambiar idioma">
+      <span class="lang__flag">ES</span><span class="lang__sep">/</span><span class="lang__alt">EN</span>
+    </button>
+    <a class="btn btn--red btn--sm" href="https://discord.gg/eVRnQw5ssZ" target="_blank" rel="noopener" data-magnetic="" data-cursor="link">Discord</a>
+    <button class="nav__burger" id="burger" type="button" aria-label="Menú" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__glowfield" aria-hidden="true"></div>
+  <div class="wrap hero__grid">
+    <div class="hero__text">
+      <p class="eyebrow hero__eyebrow"><span class="pulse"></span> <span data-i18n="hero.eyebrow">Artista 3D · FiveM &amp; GTA V</span></p>
+      <h1 class="hero__title">
+        <span class="line" data-split="chars" data-i18n="hero.t1">Modelo, texturizo</span>
+        <span class="line line--accent" data-split="chars" data-i18n="hero.t2">y doy vida</span>
+        <span class="line" data-split="chars" data-i18n="hero.t3">a tu servidor</span>
+      </h1>
+      <p class="hero__lead" data-reveal="" data-i18n="hero.lead">Peds y personajes, ropa y equipo táctico, interiores MLO, props y assets a medida. Del boceto al modelo optimizado, listo para tu ciudad.</p>
+      <div class="hero__cta" data-reveal="">
+        <a class="btn btn--red" href="#work" data-magnetic="" data-cursor="link"><span data-i18n="hero.cta1">Ver trabajos</span> <i class="btn__arrow"></i></a>
+        <a class="btn btn--glass" href="#contact" data-magnetic="" data-cursor="link"><span data-i18n="hero.cta2">Encargar un modelo</span></a>
+      </div>
+      <ul class="hero__stats" data-reveal="">
+        <li><b data-count="5" data-suffix="+">+5</b><span data-i18n="hero.s1">años modelando</span></li>
+        <li><b data-count="120" data-suffix="+">120+</b><span data-i18n="hero.s2">assets entregados</span></li>
+        <li><b>100%</b><span data-i18n="hero.s3">a medida</span></li>
+      </ul>
+    </div>
+
+    <div class="hero__stage" id="avatar">
+      <div class="av__halo" aria-hidden="true"></div>
+      <div class="av__rings" aria-hidden="true">
+        <svg viewBox="0 0 400 400" fill="none">
+          <circle cx="200" cy="200" r="196" stroke="url(#rg1)" stroke-width="1" stroke-dasharray="2 8" class="av__ring1"></circle>
+          <circle cx="200" cy="200" r="170" stroke="rgba(229,52,42,.35)" stroke-width="1" stroke-dasharray="40 14 6 14" class="av__ring2"></circle>
+          <circle cx="200" cy="200" r="150" stroke="rgba(255,255,255,.06)" stroke-width="1"></circle>
+          <g class="av__ticks">
+            <line x1="200" y1="6" x2="200" y2="22" stroke="rgba(229,52,42,.6)" stroke-width="2"></line>
+            <line x1="200" y1="378" x2="200" y2="394" stroke="rgba(229,52,42,.6)" stroke-width="2"></line>
+            <line x1="6" y1="200" x2="22" y2="200" stroke="rgba(255,255,255,.25)" stroke-width="2"></line>
+            <line x1="378" y1="200" x2="394" y2="200" stroke="rgba(255,255,255,.25)" stroke-width="2"></line>
+          </g>
+          <defs><linearGradient id="rg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e5342a"></stop><stop offset="1" stop-color="#e5342a" stop-opacity="0"></stop></linearGradient></defs>
+        </svg>
+      </div>
+      <div class="av__scan" aria-hidden="true"></div>
+      <div class="av__img-wrap" data-parallax="0.05">
+        <img class="av__img" src="assets/logo_v%3D3.webp" alt="Mascota reno de TGE DEVELOPMENT con chaqueta de cuero" width="440" height="440">
+        <div class="av__reflect" aria-hidden="true"></div>
+      </div>
+      <span class="hud hud--tl">MODEL_ID // <b>TGE DEVELOPMENT</b></span>
+      <span class="hud hud--tr">FiveM · GTA&nbsp;V</span>
+      <span class="hud hud--bl">BLENDER / 3DS&nbsp;MAX</span>
+      <span class="hud hud--br">RIG · <b>READY</b></span>
+      <span class="hud__corner c--tl"></span><span class="hud__corner c--tr"></span><span class="hud__corner c--bl"></span><span class="hud__corner c--br"></span>
+    </div>
+  </div>
+  <a class="hero__scroll" href="#work" data-cursor="hide" aria-label="Bajar"><span data-i18n="hero.scroll">Scroll</span><i></i></a>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" id="marquee" aria-hidden="true">
+  <div class="marquee__track" id="marqTrack">
+    <span>Blender</span><i>◆</i><span>3ds Max</span><i>◆</i><span>Peds</span><i>◆</i><span>MLO</span><i>◆</i><span data-i18n="mq.vehicles">Vehículos</span><i>◆</i><span data-i18n="mq.gear">Equipo táctico</span><i>◆</i><span data-i18n="mq.tex">Texturizado</span><i>◆</i><span>Rigging</span><i>◆</i><span data-i18n="mq.props">Props</span><i>◆</i><span>Substance</span><i>◆</i>
+    <span>Blender</span><i>◆</i><span>3ds Max</span><i>◆</i><span>Peds</span><i>◆</i><span>MLO</span><i>◆</i><span data-i18n="mq.vehicles">Vehículos</span><i>◆</i><span data-i18n="mq.gear">Equipo táctico</span><i>◆</i><span data-i18n="mq.tex">Texturizado</span><i>◆</i><span>Rigging</span><i>◆</i><span data-i18n="mq.props">Props</span><i>◆</i><span>Substance</span><i>◆</i>
+  </div>
+</div>
+
+<!-- ============ WORK ============ -->
+<section class="section" id="work">
+  <div class="wrap">
+    <header class="shead">
+      <p class="eyebrow" data-reveal=""><span class="pulse"></span> <span data-i18n="work.eyebrow">Portafolio</span></p>
+      <h2 class="shead__title" data-split="words" data-i18n="work.title">Trabajos seleccionados</h2>
+      <p class="shead__sub" data-reveal="" data-i18n="work.sub">Una muestra de lo que modelo y texturizo para servidores de rol.</p>
+    </header>
+    <div class="gallery" id="gallery">
+      <figure class="tile tile--xl" data-tilt="" data-cursor="view" data-full="assets/work6.webp"><div class="tile__media"><img src="assets/work6.webp" alt="" loading="lazy" width="1920" height="1080"></div><span class="tile__num">01</span><figcaption><b data-i18n="w6.t">Ped personalizado</b><span data-i18n="w6.d">In-game · FiveM</span></figcaption></figure>
+      <figure class="tile" data-tilt="" data-cursor="view" data-full="assets/work1.webp"><div class="tile__media"><img src="assets/work1.webp" alt="" loading="lazy" width="1400" height="810"></div><span class="tile__num">02</span><figcaption><b data-i18n="w1.t">Chaleco táctico</b><span data-i18n="w1.d">Modelado y textura · Blender</span></figcaption></figure>
+      <figure class="tile" data-tilt="" data-cursor="view" data-full="assets/work3.webp"><div class="tile__media"><img src="assets/work3.webp" alt="" loading="lazy" width="1400" height="700"></div><span class="tile__num">03</span><figcaption><b data-i18n="w3.t">Interior MLO</b><span data-i18n="w3.d">Mapeado de interiores</span></figcaption></figure>
+      <figure class="tile" data-tilt="" data-cursor="view" data-full="assets/work4.webp"><div class="tile__media"><img src="assets/work4.webp" alt="" loading="lazy" width="1265" height="810"></div><span class="tile__num">04</span><figcaption><b data-i18n="w4.t">Personaje riggeado</b><span data-i18n="w4.d">Ped a medida</span></figcaption></figure>
+      <figure class="tile" data-tilt="" data-cursor="view" data-full="assets/work2.webp"><div class="tile__media"><img src="assets/work2.webp" alt="" loading="lazy" width="820" height="810"></div><span class="tile__num">05</span><figcaption><b data-i18n="w2.t">Outfit &amp; equipo</b><span data-i18n="w2.d">Ropa y rig táctico</span></figcaption></figure>
+      <figure class="tile" data-tilt="" data-cursor="view" data-full="assets/work5.webp"><div class="tile__media"><img src="assets/work5.webp" alt="" loading="lazy" width="1050" height="720"></div><span class="tile__num">06</span><figcaption><b data-i18n="w5.t">Prop &amp; escultura</b><span data-i18n="w5.d">Alto detalle · texturizado</span></figcaption></figure>
+      <figure class="tile tile--wide" data-tilt="" data-cursor="view" data-full="assets/work7.webp"><div class="tile__media"><img src="assets/work7.webp" alt="" loading="lazy" width="1920" height="1080"></div><span class="tile__num">07</span><figcaption><b data-i18n="w7.t">Escena in-game</b><span data-i18n="w7.d">Render en FiveM</span></figcaption></figure>
+      <figure class="tile" data-tilt="" data-cursor="view" data-full="assets/work8.webp"><div class="tile__media"><img src="assets/work8.webp" alt="" loading="lazy" width="1920" height="1080"></div><span class="tile__num">08</span><figcaption><b data-i18n="w8.t">Ped &amp; branding</b><span data-i18n="w8.d">In-game · showcase</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section section--services" id="services">
+  <div class="wrap">
+    <header class="shead">
+      <p class="eyebrow" data-reveal=""><span class="pulse"></span> <span data-i18n="serv.eyebrow">Servicios</span></p>
+      <h2 class="shead__title" data-split="words" data-i18n="serv.title">Qué puedo hacer por ti</h2>
+    </header>
+    <div class="svcs">
+      <article class="svc" data-tilt="" data-glow=""><span class="svc__idx">01</span><div class="svc__ico" data-ico="ped"></div><h3 data-i18n="s1.t">Peds &amp; personajes</h3><p data-i18n="s1.d">Modelos originales o basados en referencias, riggeados al esqueleto de GTA y listos para entrar al juego.</p><div class="svc__border" aria-hidden="true"></div></article>
+      <article class="svc" data-tilt="" data-glow=""><span class="svc__idx">02</span><div class="svc__ico" data-ico="gear"></div><h3 data-i18n="s2.t">Ropa &amp; equipo táctico</h3><p data-i18n="s2.d">Chalecos, rigs, mochilas y ropa con logos y texturas personalizadas para tu facción o servidor.</p><div class="svc__border" aria-hidden="true"></div></article>
+      <article class="svc" data-tilt="" data-glow=""><span class="svc__idx">03</span><div class="svc__ico" data-ico="mlo"></div><h3 data-i18n="s3.t">Interiores MLO</h3><p data-i18n="s3.d">Interiores mapeados y amueblados, optimizados y con colisiones, para negocios, casas y bases.</p><div class="svc__border" aria-hidden="true"></div></article>
+      <article class="svc" data-tilt="" data-glow=""><span class="svc__idx">04</span><div class="svc__ico" data-ico="car"></div><h3 data-i18n="s4.t">Vehículos</h3><p data-i18n="s4.d">Coches, tuning, liveries y conversiones limpias para FiveM, con handling y detalles cuidados.</p><div class="svc__border" aria-hidden="true"></div></article>
+      <article class="svc" data-tilt="" data-glow=""><span class="svc__idx">05</span><div class="svc__ico" data-ico="prop"></div><h3 data-i18n="s5.t">Props &amp; escenario</h3><p data-i18n="s5.d">Objetos, esculturas y decorados con texturas de alta calidad para dar vida a tus mapas.</p><div class="svc__border" aria-hidden="true"></div></article>
+      <article class="svc" data-tilt="" data-glow=""><span class="svc__idx">06</span><div class="svc__ico" data-ico="tex"></div><h3 data-i18n="s6.t">Texturizado &amp; rigging</h3><p data-i18n="s6.d">Texturas, materiales y esqueletos. Optimizo el modelo para que rinda bien dentro del servidor.</p><div class="svc__border" aria-hidden="true"></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section section--about" id="about">
+  <div class="wrap about">
+    <div class="about__frame" data-parallax-scene="">
+      <div class="frame__corner c--tl"></div><div class="frame__corner c--tr"></div><div class="frame__corner c--bl"></div><div class="frame__corner c--br"></div>
+      <div class="frame__scan"></div>
+      <div class="frame__glow"></div>
+      <img class="about__img" src="assets/logo_v%3D3.webp" alt="Mascota de TGE DEVELOPMENT" width="360" height="360" data-parallax="0.08">
+      <div class="frame__hud frame__hud--top"><span>SUBJECT</span><b>TGE DEVELOPMENT</b></div>
+      <div class="frame__hud frame__hud--bot"><span>STATUS</span><b class="ok">ONLINE</b></div>
+      <ul class="frame__read">
+        <li><span data-i18n="about.r1">Herramientas</span><b>Blender · 3ds Max</b></li>
+        <li><span data-i18n="about.r2">Enfoque</span><b>FiveM · GTA V</b></li>
+        <li><span data-i18n="about.r3">Origen</span><b>Perú 🇵🇪</b></li>
+      </ul>
+    </div>
+    <div class="about__text">
+      <p class="eyebrow" data-reveal=""><span class="pulse"></span> <span data-i18n="about.eyebrow">Sobre mí</span></p>
+      <h2 class="shead__title" data-split="words" data-i18n="about.title">Hola, soy TGE DEVELOPMENT</h2>
+      <p data-reveal="" data-i18n="about.p1">Artista y diseñador 3D peruano especializado en contenido para FiveM y GTA V. Llevo años modelando peds, ropa, equipo táctico, interiores y props para servidores de rol de todo LATAM.</p>
+      <p data-reveal="" data-i18n="about.p2">Me tomo cada encargo en serio: mallas limpias, texturas cuidadas y modelos optimizados que se ven bien y rinden dentro del juego. Trabajo con Blender y 3ds Max, y colaboro con estudios como Vertex Studios.</p>
+      <div class="chips" data-reveal=""><span>Blender</span><span>3ds Max</span><span>Substance</span><span>ZBrush</span><span>Photoshop</span></div>
+      <a class="btn btn--red" href="#contact" data-magnetic="" data-cursor="link"><span data-i18n="about.cta">Trabajemos juntos</span> <i class="btn__arrow"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section--contact" id="contact">
+  <div class="contact__bg" aria-hidden="true"></div>
+  <div class="wrap contact__in">
+    <p class="eyebrow" data-reveal=""><span class="pulse"></span> <span data-i18n="contact.eyebrow">Contacto</span></p>
+    <h2 class="contact__big"><span class="line" data-split="chars" data-i18n="contact.big1">Construyamos</span><span class="line line--accent" data-split="chars" data-i18n="contact.big2">algo brutal</span></h2>
+    <p class="shead__sub" data-reveal="" data-i18n="contact.sub">Cuéntame qué necesitas y lo hacemos realidad. Respondo más rápido por Discord.</p>
+    <a class="cta-huge" href="https://discord.gg/eVRnQw5ssZ" target="_blank" rel="noopener" data-magnetic="" data-cursor="link" data-reveal="">
+      <span class="cta-huge__ico" data-ico="discord"></span>
+      <span class="cta-huge__txt"><b data-i18n="contact.join">Únete a mi Discord</b><em>discord.gg/nn8nPwWsWc</em></span>
+      <i class="cta-huge__arrow"></i>
+    </a>
+    <div class="contact__row">
+      <a class="clink" href="https://www.youtube.com/@angkerletopno1" target="_blank" rel="noopener" data-magnetic="" data-cursor="link" data-reveal="">
+        <span class="clink__ico" data-ico="youtube"></span><div><b>YouTube</b><span data-i18n="contact.youtube">Mira mi canal</span></div><i class="clink__arrow"></i>
+      </a>
+      <div class="clink clink--static" data-reveal="">
+        <span class="clink__ico" data-ico="tag"></span><div><b>Discord ID</b><span class="mono">1417232102251954259</span></div>
+        <button class="copy" id="copyId" type="button" data-cursor="link" data-copy="1417232102251954259" data-i18n="contact.copy">Copiar</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__mark" aria-hidden="true"><span data-split="chars" id="footMark">TGE DEVELOPMENT</span></div>
+  <div class="wrap footer__in">
+    <a class="brand" href="#top" data-magnetic=""><img src="assets/logo_v%3D3.webp" alt="" width="32" height="32"><span class="brand__name">TGE DEVELOPMENT</span></a>
+    <p class="footer__note"><span data-i18n="footer.made">Diseño y desarrollo por</span> <a href="https://pornhub.com" target="_blank" rel="noopener" data-cursor="link">Angker Letop</a> · © <span id="year"></span> TGE DEVELOPMENT</p>
+    <div class="footer__links">
+      <a href="https://discord.gg/eVRnQw5ssZ" target="_blank" rel="noopener" data-cursor="link" data-magnetic="">Discord</a>
+      <a href="https://www.youtube.com/@angkerletopno1" target="_blank" rel="noopener" data-cursor="link" data-magnetic="">YouTube</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__close" id="lbClose" data-cursor="hide" aria-label="Cerrar">×</button>
+  <button class="lightbox__nav lightbox__prev" id="lbPrev" data-cursor="hide" aria-label="Anterior">‹</button>
+  <figure class="lightbox__stage"><img class="lightbox__img" id="lbImg" alt=""><figcaption class="lightbox__cap" id="lbCap"></figcaption></figure>
+  <button class="lightbox__nav lightbox__next" id="lbNext" data-cursor="hide" aria-label="Siguiente">›</button>
+  <span class="lightbox__count" id="lbCount"></span>
+</div>
+
+<script src="lib/gsap.min.js"></script>
+<script src="lib/ScrollTrigger.min.js"></script>
+<script src="lib/lenis.min.js"></script>
+<script src="lib/split-type.min.js"></script>
+<script src="i18n.js"></script>
+<script src="main.js"></script>
+
+
+</body></html>
