@@ -1,37 +1,37 @@
-/* i18n — Renoncin. Diccionario ES/EN + motor. Se carga antes de main.js. */
+/* i18n — TGE Development. Kamus BM/EN + enjin. Dimuatkan sebelum main.js. */
 (function () {
   "use strict";
   const DICT = {
-    es: {
-      "nav.work": "Trabajos", "nav.services": "Servicios", "nav.about": "Sobre mí", "nav.contact": "Contacto",
-      "hero.eyebrow": "Artista 3D · FiveM & GTA V",
-      "hero.t1": "Modelo, texturizo", "hero.t2": "y doy vida", "hero.t3": "a tu servidor",
-      "hero.lead": "Peds y personajes, ropa y equipo táctico, interiores MLO, props y assets a medida. Del boceto al modelo optimizado, listo para tu ciudad.",
-      "hero.cta1": "Ver trabajos", "hero.cta2": "Encargar un modelo",
-      "hero.s1": "años modelando", "hero.s2": "assets entregados", "hero.s3": "a medida", "hero.scroll": "Scroll",
-      "mq.vehicles": "Vehículos", "mq.gear": "Equipo táctico", "mq.tex": "Texturizado", "mq.props": "Props",
-      "work.eyebrow": "Portafolio", "work.title": "Trabajos seleccionados", "work.sub": "Una muestra de lo que modelo y texturizo para servidores de rol.",
-      "w6.t": "Ped personalizado", "w6.d": "In-game · FiveM", "w1.t": "Chaleco táctico", "w1.d": "Modelado y textura · Blender",
-      "w3.t": "Interior MLO", "w3.d": "Mapeado de interiores", "w4.t": "Personaje riggeado", "w4.d": "Ped a medida",
-      "w2.t": "Outfit & equipo", "w2.d": "Ropa y rig táctico", "w5.t": "Prop & escultura", "w5.d": "Alto detalle · texturizado",
-      "w7.t": "Escena in-game", "w7.d": "Render en FiveM", "w8.t": "Ped & branding", "w8.d": "In-game · showcase",
-      "serv.eyebrow": "Servicios", "serv.title": "Qué puedo hacer por ti",
-      "s1.t": "Peds & personajes", "s1.d": "Modelos originales o basados en referencias, riggeados al esqueleto de GTA y listos para entrar al juego.",
-      "s2.t": "Ropa & equipo táctico", "s2.d": "Chalecos, rigs, mochilas y ropa con logos y texturas personalizadas para tu facción o servidor.",
-      "s3.t": "Interiores MLO", "s3.d": "Interiores mapeados y amueblados, optimizados y con colisiones, para negocios, casas y bases.",
-      "s4.t": "Vehículos", "s4.d": "Coches, tuning, liveries y conversiones limpias para FiveM, con handling y detalles cuidados.",
-      "s5.t": "Props & escenario", "s5.d": "Objetos, esculturas y decorados con texturas de alta calidad para dar vida a tus mapas.",
-      "s6.t": "Texturizado & rigging", "s6.d": "Texturas, materiales y esqueletos. Optimizo el modelo para que rinda bien dentro del servidor.",
-      "about.eyebrow": "Sobre mí", "about.title": "Hola, soy Renoncin",
-      "about.p1": "Artista y diseñador 3D peruano especializado en contenido para FiveM y GTA V. Llevo años modelando peds, ropa, equipo táctico, interiores y props para servidores de rol de todo LATAM.",
-      "about.p2": "Me tomo cada encargo en serio: mallas limpias, texturas cuidadas y modelos optimizados que se ven bien y rinden dentro del juego. Trabajo con Blender y 3ds Max, y colaboro con estudios como Vertex Studios.",
-      "about.cta": "Trabajemos juntos", "about.r1": "Herramientas", "about.r2": "Enfoque", "about.r3": "Origen",
-      "contact.eyebrow": "Contacto", "contact.big1": "Construyamos", "contact.big2": "algo brutal",
-      "contact.sub": "Cuéntame qué necesitas y lo hacemos realidad. Respondo más rápido por Discord.",
-      "contact.join": "Únete a mi Discord", "contact.youtube": "Mira mi canal", "contact.copy": "Copiar",
-      "footer.made": "Diseño y desarrollo por",
-      "meta.desc": "Renoncin — artista y diseñador 3D. Peds, ropa, equipo táctico, interiores MLO, props y assets a medida para FiveM y GTA V. Blender · 3ds Max.",
-      "cursor.view": "Ver", "_title": "Renoncin — Artista 3D para FiveM & GTA V", "_copied": "¡Copiado!"
+    bm: {
+      "nav.work": "Kerja", "nav.services": "Perkhidmatan", "nav.about": "Tentang Saya", "nav.contact": "Hubungi",
+      "hero.eyebrow": "Artis 3D · FiveM & GTA V",
+      "hero.t1": "Saya model, tekstur", "hero.t2": "dan hidupkan", "hero.t3": "server anda",
+      "hero.lead": "Ped dan watak, pakaian dan peralatan taktikal, interior MLO, prop dan aset custom. Dari lakaran ke model yang dioptimumkan, sedia untuk bandar anda.",
+      "hero.cta1": "Lihat kerja", "hero.cta2": "Tempah model",
+      "hero.s1": "tahun bermodel", "hero.s2": "aset dihantar", "hero.s3": "custom dibuat", "hero.scroll": "Skrol",
+      "mq.vehicles": "Kenderaan", "mq.gear": "Peralatan taktikal", "mq.tex": "Tekstur", "mq.props": "Prop",
+      "work.eyebrow": "Portfolio", "work.title": "Kerja terpilih", "work.sub": "Contoh apa yang saya model dan tekstur untuk server roleplay.",
+      "w6.t": "Ped custom", "w6.d": "In-game · FiveM", "w1.t": "Vest taktikal", "w1.d": "Model & tekstur · Blender",
+      "w3.t": "Interior MLO", "w3.d": "Pemetaan interior", "w4.t": "Watak rig", "w4.d": "Ped custom",
+      "w2.t": "Outfit & peralatan", "w2.d": "Pakaian & rig taktikal", "w5.t": "Prop & arca", "w5.d": "Detail tinggi · tekstur",
+      "w7.t": "Adegan in-game", "w7.d": "Render dalam FiveM", "w8.t": "Ped & branding", "w8.d": "In-game · showcase",
+      "serv.eyebrow": "Perkhidmatan", "serv.title": "Apa yang saya boleh buat untuk anda",
+      "s1.t": "Ped & watak", "s1.d": "Model asli atau berdasarkan rujukan, di-rig ke rangka GTA dan sedia untuk masuk ke dalam game.",
+      "s2.t": "Pakaian & peralatan taktikal", "s2.d": "Vest, rig, beg dan pakaian dengan logo dan tekstur custom untuk faksyen atau server anda.",
+      "s3.t": "Interior MLO", "s3.d": "Interior dipetakan dan dilengkapi perabot, dioptimumkan dan mempunyai collision, untuk perniagaan, rumah dan pangkalan.",
+      "s4.t": "Kenderaan", "s4.d": "Kereta, tuning, livery dan penukaran bersih untuk FiveM, dengan handling dan detail yang dijaga.",
+      "s5.t": "Prop & persekitaran", "s5.d": "Objek, arca dan set hiasan dengan tekstur berkualiti tinggi untuk menghidupkan peta anda.",
+      "s6.t": "Tekstur & rigging", "s6.d": "Tekstur, bahan dan rangka. Saya optimumkan model supaya berfungsi lancar dalam server.",
+      "about.eyebrow": "Tentang Saya", "about.title": "Hai, saya Angker Letop",
+      "about.p1": "Artis dan pereka 3D Malaysia yang mengkhusus dalam kandungan untuk FiveM dan GTA V. Saya telah bertahun-tahun memodel ped, pakaian, peralatan taktikal, interior dan prop untuk server roleplay di seluruh Malaysia.",
+      "about.p2": "Saya ambil setiap tempahan dengan serius: mesh yang kemas, tekstur yang dijaga dan model yang dioptimumkan, kelihatan baik dan berfungsi lancar dalam game. Saya menggunakan Blender dan 3ds Max, dan bekerjasama dengan studio seperti Vertex Studios.",
+      "about.cta": "Jom kita bekerja bersama", "about.r1": "Alat", "about.r2": "Fokus", "about.r3": "Berasal dari",
+      "contact.eyebrow": "Hubungi", "contact.big1": "Jom bina", "contact.big2": "sesuatu yang hebat",
+      "contact.sub": "Beritahu saya apa yang anda perlukan dan kita jadikan ia kenyataan. Saya balas paling cepat di Discord.",
+      "contact.join": "Sertai Discord saya", "contact.youtube": "Tonton saluran saya", "contact.copy": "Salin",
+      "footer.made": "Reka bentuk & pembangunan oleh",
+      "meta.desc": "TGE Development — artis dan pereka 3D. Ped, pakaian, peralatan taktikal, interior MLO, prop dan aset custom untuk FiveM dan GTA V. Blender · 3ds Max.",
+      "cursor.view": "Lihat", "_title": "TGE Development — Artis 3D untuk FiveM & GTA V", "_copied": "Disalin!"
     },
     en: {
       "nav.work": "Work", "nav.services": "Services", "nav.about": "About", "nav.contact": "Contact",
@@ -61,31 +61,28 @@
       "contact.sub": "Tell me what you need and let's make it happen. I reply fastest on Discord.",
       "contact.join": "Join my Discord", "contact.youtube": "Watch my channel", "contact.copy": "Copy",
       "footer.made": "Design & development by",
-      "meta.desc": "Renoncin — 3D artist and designer. Peds, clothing, tactical gear, MLO interiors, props and custom assets for FiveM and GTA V. Blender · 3ds Max.",
+      "meta.desc": "TGE Development — 3D artist and designer. Peds, clothing, tactical gear, MLO interiors, props and custom assets for FiveM and GTA V. Blender · 3ds Max.",
       "cursor.view": "View", "_title": "TGE Development — 3D Artist for FiveM & GTA V", "_copied": "Copied!"
     }
   };
 
-  let lang = "es";
-  try { lang = localStorage.getItem("reno_lang") || ((navigator.language || "es").slice(0, 2).toLowerCase() === "en" ? "en" : "es"); } catch (e) {}
-  if (lang !== "es" && lang !== "en") lang = "es";
+  let lang = "bm";
+  try { lang = localStorage.getItem("reno_lang") || ((navigator.language || "bm").slice(0, 2).toLowerCase() === "en" ? "en" : "bm"); } catch (e) {}
+  if (lang !== "bm" && lang !== "en") lang = "bm";
 
-  function t(k) { return (DICT[lang] && DICT[lang][k]) || DICT.es[k] || k; }
+  function t(k) { return (DICT[lang] && DICT[lang][k]) || DICT.bm[k] || k; }
   function apply(l) {
-    lang = l; const d = DICT[l]; document.documentElement.lang = l;
+    lang = l; const d = DICT[l]; document.documentElement.lang = (l === "bm" ? "ms" : l);
     document.querySelectorAll("[data-i18n]").forEach(el => { const v = d[el.getAttribute("data-i18n")]; if (v != null) el.textContent = v; });
     document.querySelectorAll("[data-i18n-meta]").forEach(el => { const v = d[el.getAttribute("data-i18n-meta")]; if (v != null) el.setAttribute("content", v); });
     document.title = d._title;
     const b = document.getElementById("langBtn");
-    if (b) { const f = b.querySelector(".lang__flag"), a = b.querySelector(".lang__alt"); if (f) f.textContent = l.toUpperCase(); if (a) a.textContent = (l === "es" ? "EN" : "ES"); }
+    if (b) { const f = b.querySelector(".lang__flag"), a = b.querySelector(".lang__alt"); if (f) f.textContent = l.toUpperCase(); if (a) a.textContent = (l === "bm" ? "EN" : "BM"); }
     try { localStorage.setItem("reno_lang", l); } catch (e) {}
     document.dispatchEvent(new CustomEvent("langchange", { detail: { lang: l } }));
   }
-  window.RENO_I18N = { get lang() { return lang; }, t, apply, toggle() { apply(lang === "es" ? "en" : "es"); } };
+  window.RENO_I18N = { get lang() { return lang; }, t, apply, toggle() { apply(lang === "bm" ? "en" : "bm"); } };
 
-  // Aplica de inmediato: este script va después de todo el contenido, así que los
-  // elementos ya existen. Debe correr ANTES de que main.js parta el texto (SplitType),
-  // o al re-aplicar textContent borraría los spans del split.
   apply(lang);
   const _b = document.getElementById("langBtn"); if (_b) _b.addEventListener("click", () => window.RENO_I18N.toggle());
 })();
