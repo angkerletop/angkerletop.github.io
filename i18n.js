@@ -54,7 +54,7 @@
       "s5.t": "Props & environment", "s5.d": "Objects, sculptures and set pieces with high-quality textures to bring your maps to life.",
       "s6.t": "Texturing & rigging", "s6.d": "Textures, materials and skeletons. I optimize the model so it performs well inside the server.",
       "about.eyebrow": "About", "about.title": "Hi, I'm Angker Letop",
-      "about.p1": "Peruvian 3D artist and designer specialized in content for FiveM and GTA V. I've spent years modeling peds, clothing, tactical gear, interiors and props for roleplay servers across LATAM.",
+      "about.p1": "Malaysian 3D artist and designer specialized in content for FiveM and GTA V. I've spent years modeling peds, clothing, tactical gear, interiors and props for roleplay servers across Malaysia",
       "about.p2": "I take every commission seriously: clean meshes, careful textures and optimized models that look good and perform in-game. I work with Blender and 3ds Max, and collaborate with studios like Vertex Studios.",
       "about.cta": "Let's work together", "about.r1": "Tools", "about.r2": "Focus", "about.r3": "Based in",
       "contact.eyebrow": "Contact", "contact.big1": "Let's build", "contact.big2": "something brutal",
